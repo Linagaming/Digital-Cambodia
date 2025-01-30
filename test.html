@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide List Items on Resize</title>
+    <style>
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 10px;
+        }
+        li {
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            border-radius: 5px;
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li>ព័ត៌មានថ្មីៗ</li>
+        <li>ឌីជីថលកម្ពុជា</li>
+        <li>បច្ចេកវិទ្យាក្នុងឧស្សាហកម្ម</li>
+        <li>ឌីជីថលពិភាពលោក</li>
+        <li>អំពី AI</li>
+        <li>ទំនាក់ទំនង</li>
+        <li>🔍</li>
+        <li class="list-icon-phone">📱</li>
+    </ul>
+
+    <script>
+        window.addEventListener('resize', function () {
+            const items = document.querySelectorAll("ul li");
+            let screenWidth = window.innerWidth;
+
+            items.forEach((li, index) => {
+                let hideWidth = 1000 - (index * 100); 
+
+                if (screenWidth < hideWidth) {
+                    li.style.opacity = "0";
+                    li.style.transform = "translateY(-10px)";
+                    li.style.transition = "opacity 0.5s ease, transform 0.5s ease";
+                } else {
+                    li.style.opacity = "1";
+                    li.style.transform = "translateY(0)";
+                }
+            });
+        });
+
+        // Hide elements immediately if page loads on a small screen
+        window.addEventListener('load', function () {
+            window.dispatchEvent(new Event('resize'));
+        });
+    </script>
+
+</body>
+</html>
