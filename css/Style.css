@@ -116,6 +116,7 @@ body{
     transform: translate(-50%, -0%);
     width: 100%;
     height: 100vh;
+    z-index: 1;
 }
 .content-slide .box-slide .slide .slide-img .slide-text .manage-text-slide{
     padding: 30px 30px;
@@ -413,14 +414,29 @@ body{
         display: block;
     }
     .manage-navbar .navbar .list-navbar ul .list-icon-phone .bi-list{
-        font-size: 32px;
+        font-size: 25px;
     }
     .manage-navbar .navbar .logo img{
-        width: 35px;
+        width: 30px;
     }
     .manage-navbar .navbar .logo span{
-        font-size: 18px;
+        font-size: 15px;
     }
+    .manage-content .content-center{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .manage-navbar .navbar {
+        padding: 6px 25px;
+    }
+    .box-slide .slide .slide-img{
+        box-sizing: border-box;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        height: 60vh;
+    }
+    
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
