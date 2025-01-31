@@ -26,8 +26,8 @@ body{
 
 /* scrolled .navbar.scrolled */
 .manage-navbar .navbar.scrolled {
-    background: radial-gradient(circle at 0% 0%, #7000f9 50%, rgb(31, 19, 48) 150%);
-    transition: .3;
+    background: radial-gradient(circle at 0% 0%, #7300ff 50%, rgb(31, 19, 48) 150%);
+    transition: .3s;
 }
 .manage-navbar .navbar .logo{
     background-color: rgba(153, 50, 204, 0);
@@ -209,7 +209,7 @@ body{
 .manage-content .content-center .title-content-category{
     font-size: 20px;
     /* background-color: #080c2a; */
-    background: radial-gradient(circle at 100% 100%, #7000f9 0%, rgb(31, 19, 48) 100%);
+    background: radial-gradient(circle at 0% 0%, #7300ff 50%, rgb(31, 19, 48) 150%);
     /* border: #151f68 solid 4px; */
     display: flex;
     align-items: center;
@@ -230,7 +230,7 @@ body{
     padding-left: 35px;
     padding-right: 35px;
     margin-top: 0px;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* background-color: chocolate; */
     height: auto;
     box-sizing: border-box;
@@ -240,28 +240,24 @@ body{
     margin-bottom: 30px;
 }
 .bg-content{
-    background: radial-gradient(circle at 100% 100%, #7000f9 0%, rgb(31, 19, 48) 100%) ;
+    background: radial-gradient(circle at 100% 100%, #7300ff 0%, rgb(31, 19, 48) 100%);
     padding: 0px 0px 5px 0px;
     border-radius: 15px;
     overflow: hidden;
     box-sizing: border-box;
     height: auto;
     float: left;
-    transition: .3s;
+    transition: 0.3s;
     cursor: pointer;
 }
 .manage-content .box-content{
     margin: 0;
     padding: 0px 15px;
     float: left;
-    padding-bottom: 20px;
+    padding-bottom: 35px;
     cursor: pointer;
-    overflow: hidden;
+    /* overflow: hidden; */
     box-sizing: border-box;
-}
-.bg-content:hover {
-    background: radial-gradient(circle at 100% 100%, #7000f9 0%, rgb(31, 19, 48) 100%);
-    transition: .3;
 }
 .manage-content .box-content:nth-child(8){
     margin-right: 0px;
@@ -280,9 +276,14 @@ body{
     margin-top: -10px;
     background-repeat: no-repeat;
     object-fit: cover;
+    filter: brightness(80%);
+    transition: .2s;
+}
+.manage-content .box-content .bg-content:hover .img-content img{
+    filter: brightness(100%);
 }
 .box-content .manage-title-content{
-    margin: 10px 11px;
+    margin: 0px 11px;
     /* background-color: coral; */
     overflow: hidden;
     box-sizing: border-box;
@@ -404,8 +405,8 @@ body{
         max-width: 100%;
         background-color: transparent;
     }
-    .manage-content .box-content .img-content{
-        height: 300px;
+    .manage-content .box-content .bg-content .img-content{
+        height: 350px;
     }
     .manage-navbar .navbar .list-navbar ul{
         float: right;
@@ -436,7 +437,6 @@ body{
         width: 100%;
         height: 60vh;
     }
-    
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -454,12 +454,11 @@ body{
         max-width: 90%;
         background-color: transparent;
     }
-    .manage-content .box-content .img-content{
+    .manage-content .box-content .bg-content .img-content{
         height: 400px;
     }
     .manage-navbar .navbar .list-navbar ul li{
-        display: none;
-    }
+        display: none;    }
     .manage-navbar .navbar .list-navbar ul{
         float: right;
     }
@@ -469,6 +468,13 @@ body{
     }
     .manage-navbar .navbar .list-navbar ul .list-icon-phone .bi-list{
         font-size: 32px;
+    }
+    .manage-navbar .navbar {
+        padding: 6px 25px;
+    }
+    .manage-content .content-center{
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
@@ -485,8 +491,8 @@ body{
         font-size: 50px;
         font-weight: 600;
     }
-    .manage-content .box-content .img-content{
-        height: 230px;
+    .manage-content .box-content .bg-content .img-content{
+        height: 250px;
     }
     .manage-navbar .navbar .list-navbar ul li{
         display: none;
@@ -530,5 +536,8 @@ body{
     }
     .manage-navbar .navbar .list-navbar ul{
         float: left;
+    }
+    .manage-content .box-content .bg-content .img-content{
+        height: 300px;
     }
 }
