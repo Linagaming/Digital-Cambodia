@@ -417,9 +417,9 @@ body{
     overflow: hidden;
 }
 .manage-footer .footer-center .box-footer{
-    /* background-color: rgba(0, 0, 0, 0.13); */
     float: left;
-    padding: 0px 30px 0px 20px;
+    padding: 0px 30px 0px 30px;
+    margin-bottom: 0px;
 }
 .manage-footer .footer-center .box-footer .title-footer span{
     font-size: 23px;
@@ -427,6 +427,9 @@ body{
     padding-bottom: 15px;
     display: block;
     margin-bottom: 15px;
+}
+.manage-footer .footer-center .box-footer .title-footer .location-center{
+    text-align: center;
 }
 .manage-footer .footer-center .box-footer .title-footer span::before{
     content: "";
@@ -438,12 +441,12 @@ body{
     background-color: #ffffff;
     border-radius: 50px;
     transition: 0.5s;
-}.manage-footer .footer-center .box-footer:nth-child(2) .title-footer span::before{
+}
+.manage-footer .footer-center .box-footer:nth-child(2) .title-footer span::before{
     width: 100%;
 }
 .manage-footer .footer-center .box-footer:hover .title-footer span::before{
     width: 100%;
-
     transition: 0.5s;
 }
 .manage-footer .footer-center .box-footer .title-footer p{
@@ -559,6 +562,27 @@ body{
         width: 100%;
         height: 60vh;
     }
+    .manage-footer .footer-center .box-footer .title-footer .location-center{
+        text-align: left;
+    }
+    .manage-footer .footer-center .box-footer .title-footer .none-device i{
+        display: none;
+    }
+    .manage-footer .footer-center .box-footer .title-footer span{
+        font-size: 20px;
+    }
+    .manage-footer .footer-center .box-footer{
+        background-color: rgba(0, 0, 0, 0.13);
+        margin-bottom: 20px;
+        padding: 25px 30px;
+        border-radius: 20px;
+    }
+    .manage-footer .footer-center .box-footer:nth-child(2) .title-footer .location-center::before{
+        width: 50%;
+    }
+    .manage-footer .footer-center .box-footer:hover .title-footer .location-center::before{
+        width: 100%;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -598,6 +622,27 @@ body{
         padding-left: 10px;
         padding-right: 10px;
     }
+    .manage-footer .footer-center .box-footer .title-footer .location-center{
+        text-align: left;
+    }
+    .manage-footer .footer-center .box-footer .title-footer .none-device i{
+        display: none;
+    }
+    .manage-footer .footer-center .box-footer{
+        margin-bottom: 20px;
+    }
+    .manage-footer .footer-center .box-footer{
+        background-color: rgba(0, 0, 0, 0.13);
+        margin-bottom: 20px;
+        padding: 25px 30px;
+        border-radius: 20px;
+    }
+    .manage-footer .footer-center .box-footer:nth-child(2) .title-footer .location-center::before{
+        width: 50%;
+    }
+    .manage-footer .footer-center .box-footer:hover .title-footer .location-center::before{
+        width: 100%;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -628,6 +673,21 @@ body{
     .manage-navbar .navbar .list-navbar ul .list-icon-phone .bi-list{
         font-size: 32px;
     }
+    .manage-footer .footer-center .box-footer{
+        margin-bottom: 20px;
+    }
+    .manage-footer .footer-center .box-footer{
+        background-color: transparent;
+        margin-bottom: 20px;
+        padding: 0px 25px;
+        border-radius: 20px;
+    }
+    .manage-footer .footer-center .box-footer:nth-child(2) .title-footer .location-center::before{
+        width: 50%;
+    }
+    .manage-footer .footer-center .box-footer:hover .title-footer .location-center::before{
+        width: 100%;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -638,6 +698,12 @@ body{
     .content-slide .box-slide .slide .slide-img .slide-text span{
         font-size: 50px;
         font-weight: 600;
+    }
+    .manage-footer .footer-center .box-footer .title-footer .location-center{
+        text-align: center;
+    }
+    .manage-footer .footer-center .box-footer .title-footer .none-device i{
+        display: block;
     }
 }
 
@@ -661,5 +727,8 @@ body{
     }
     .manage-content .box-content .bg-content .img-content{
         height: 300px;
+    }
+    .manage-footer .footer-center .box-footer:nth-child(2) .title-footer .location-center::before{
+        width: 100%;
     }
 }
