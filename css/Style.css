@@ -383,8 +383,9 @@ body{
     /* padding: 0; */
     color: #ffffff;
     overflow: hidden;
-    padding: 15px 0px;
+    padding: 35px 0px 10px 0px;
     /* height: 100vh; */
+    height: auto;
 }
 .manage-footer .logo-footer{
     /* background-color: deeppink; */
@@ -393,7 +394,8 @@ body{
     justify-content: center;
     max-width: 100%;
     flex-direction: column;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
+    display: none;
 }
 .manage-footer .logo-footer a{
     display: flex;
@@ -414,7 +416,8 @@ body{
     /* background-color: chocolate; */
     padding: 0px 50px;
     box-sizing: border-box;
-    overflow: hidden;
+    margin: 0;
+    height: auto;
 }
 .manage-footer .footer-center .box-footer{
     float: left;
@@ -514,7 +517,25 @@ body{
     padding: 3px 15px;
     border-radius: 6px;
 }
-
+/* Cedit Company */
+.manage-footer .credit-company{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid #ffffff35;
+    height: auto;
+}
+.manage-footer .credit-company p{
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    padding: 20px 0px 10px 0px;
+    font-size: 15px;
+}
+.manage-footer .credit-company p a{
+    text-decoration: none;
+    color: #e1e9ffbd;
+}
 
 
 
@@ -598,6 +619,9 @@ body{
     .manage-footer .footer-center .box-footer:hover .title-footer .location-center::before{
         width: 100%;
     }
+    .manage-footer .logo-footer{
+        display: block;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -658,6 +682,9 @@ body{
     .manage-footer .footer-center .box-footer:hover .title-footer .location-center::before{
         width: 100%;
     }
+    .manage-footer .logo-footer{
+        display: block;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -703,6 +730,9 @@ body{
     .manage-footer .footer-center .box-footer:hover .title-footer .location-center::before{
         width: 100%;
     }
+    .manage-footer .logo-footer{
+        display: none;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -745,5 +775,10 @@ body{
     }
     .manage-footer .footer-center .box-footer:nth-child(2) .title-footer .location-center::before{
         width: 100%;
+    }
+    .manage-footer .footer-center .box-footer{
+        background-color: transparent;
+        margin-bottom: 0px;
+        padding: 0px 30px;
     }
 }
