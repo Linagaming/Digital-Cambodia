@@ -524,6 +524,8 @@ body{
     justify-content: center;
     border-top: 2px solid #ffffff35;
     height: auto;
+    background-color: rgb(58, 36, 90);
+    z-index: 1;
 }
 .manage-footer .credit-company p{
     margin: 0;
