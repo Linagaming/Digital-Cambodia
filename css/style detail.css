@@ -37,6 +37,7 @@
     align-items: center;
     margin-bottom: 10px;
     position: relative;
+    text-decoration: none;
 }
 .box-detail .category-detail span i{
     margin-right: 5px;
@@ -48,6 +49,7 @@
     margin: 0;
     float: left;
     padding-right: 5px;
+    text-decoration: none;
 }
 .box-detail .category-detail span:nth-child(2){
     padding: 0;
