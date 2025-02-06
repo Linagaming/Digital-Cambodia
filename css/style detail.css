@@ -43,6 +43,9 @@
     margin-right: 5px;
     text-decoration: none;
 }
+.box-detail .category-detail span:nth-child(2){
+    text-decoration: none;
+}
 .box-detail .category-detail span{
     color: #ffffff;
     font-size: 17px;
