@@ -233,7 +233,7 @@ body{
 .manage-content .content-center{
     padding-left: 35px;
     padding-right: 35px;
-    margin-top: 0px;
+    margin-top: 20px;
     /* overflow: hidden; */
     /* background-color: chocolate; */
     height: auto;
@@ -570,6 +570,12 @@ body{
 /* Responsive Layout */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    .manage-content{
+        padding: 0px 13px;
+    }
+    .manage-footer{
+        padding: 35px 0px 10px 0px;
+    }
     .manage-navbar .navbar {
         margin: 0px 0px;
         padding: 6px 40px;
@@ -651,6 +657,12 @@ body{
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+    .manage-content{
+        padding: 0px 13px;
+    }
+    .manage-footer{
+        padding: 35px 0px 10px 0px;
+    }
     .manage-navbar .navbar {
         margin: 0px 0px;
         padding: 6px 40px;
@@ -816,5 +828,11 @@ body{
     }
     .manage-navbar .navbar {
         margin: 0px 100px;
+    }
+    .manage-footer{
+        padding: 35px 70px 10px 70px;
+    }
+    .manage-content{
+        padding: 0px 125px;
     }
 }
